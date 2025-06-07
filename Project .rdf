@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10/"
+     xml:base="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#coversTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#coversTopic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Topic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Lesson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#enrolledIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#enrolledIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#hasLesson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#hasLesson">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Instructor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Course"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Instructor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Instructor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Lesson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Lesson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Student"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Topic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Topic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Course"/>
+        <untitled-ontology-10:enrolledIn rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Eslam_mokhtar"/>
+        <untitled-ontology-10:enrolledIn rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Reyad"/>
+        <untitled-ontology-10:enrolledIn rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Shahd_khaled"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Dr.Ahmed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Dr.Ahmed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Instructor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Dr.Elzhra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Dr.Elzhra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Instructor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Dr.Hala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Dr.Hala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Instructor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Dr.Menna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Dr.Menna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Instructor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Eslam_mokhtar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Eslam_mokhtar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Rehab_mahmoud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Rehab_mahmoud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Reyad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Reyad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#SemanticWeb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#SemanticWeb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Course"/>
+        <untitled-ontology-10:enrolledIn rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Rehab_mahmoud"/>
+        <untitled-ontology-10:enrolledIn rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Zeyad_Mohamed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Shahd_khaled -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Shahd_khaled">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Zeyad_Mohamed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Zeyad_Mohamed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10/i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10/s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Instructor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10/i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#teaches"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10/i"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10/c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#Student"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10/s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10#enrolledIn"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10/s"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/zeyad/ontologies/2025/4/untitled-ontology-10/c"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
